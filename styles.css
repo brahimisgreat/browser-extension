@@ -1,0 +1,13 @@
+body{
+    background-color: #091540;
+}
+
+.header-container{
+    width: 80%;
+    background-color: #2F364B;
+    border-radius: var(--corner-radius-10, 10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
