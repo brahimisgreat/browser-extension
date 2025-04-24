@@ -1,13 +1,108 @@
-body{
-    background-color: #091540;
+body {
+  background: linear-gradient(#04091b 0%, #091540 100%), #fff;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+flex-direction: column;
+align-items: center;
 }
 
-.header-container{
-    width: 80%;
-    background-color: #2F364B;
-    border-radius: var(--corner-radius-10, 10px);
+header {
+  width: 343px;
+  display: flex;
+  background-color: #202535;
+  border-radius: var(--corner-radius-10, 10px);
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.header-box1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-box2 {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--corner-radius-12, 12px);
+  background: var(--colors-neutral-700, #2f364b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Geologica", sans-serif;
+  color: white;
+}
+
+/* SECTION */
+
+section {
+  width: 343px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1 {
+  color: var(--colors-neutral-0, #fbfdfe);
+  text-align: center;
+  font-family: "Noto Sans";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.filter-box{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
+    gap: 10px;
+}
+
+.btn1 {
+  border-radius: var(--corner-radius-full, 999px);
+  background: var(--colors-red-400, #f25c54);
+  display: flex;
+  padding: var(--spacing-100, 8px) 20px var(--spacing-125, 10px) 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.btn2 {
+  display: flex;
+  padding: var(--spacing-100, 8px) 20px var(--spacing-125, 10px) 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--corner-radius-full, 999px);
+  border: 1px solid var(--colors-neutral-600, #535868);
+  background: var(--colors-neutral-700, #2f364b);
+  font-size: 20px;
+  color: white;
+
+}
+
+.btn3 {
+  display: flex;
+  padding: var(--spacing-100, 8px) 20px var(--spacing-125, 10px) 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--corner-radius-full, 999px);
+  border: 1px solid var(--colors-neutral-600, #535868);
+  background: var(--colors-neutral-700, #2f364b);
+  font-size: 20px;
+  color: white;
 }
