@@ -66,17 +66,32 @@ section {
     gap: 10px;
 }
 
+.active{
+  background: var(--colors-red-400, #f25c54);
+
+}
+
 .btn1 {
   border-radius: var(--corner-radius-full, 999px);
-  background: var(--colors-red-400, #f25c54);
   display: flex;
   padding: var(--spacing-100, 8px) 20px var(--spacing-125, 10px) 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: var(--colors-neutral-700, #2f364b);
+color: white;
   gap: 10px;
   font-size: 20px;
+  border: none;
 }
+
+.active{
+    background: var(--colors-red-400, #f25c54);
+}
+
+
+
+
 
 .btn2 {
   display: flex;
@@ -90,6 +105,7 @@ section {
   background: var(--colors-neutral-700, #2f364b);
   font-size: 20px;
   color: white;
+  border: none;
 
 }
 
@@ -105,4 +121,9 @@ section {
   background: var(--colors-neutral-700, #2f364b);
   font-size: 20px;
   color: white;
+  border: none;
 }
+
+.active {
+    background: var(--colors-red-400, #f25c54);  
+  }
