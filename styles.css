@@ -129,17 +129,20 @@ main {
 
 main .card {
   width: 303px;
-  height: 160px;
+  height: 190px;
   padding: 20px;
   border-radius: var(--corner-radius-20, 20px);
   border: 1px solid #535868;
   background: #202535;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-box1{
   display: flex;
   gap: 10px;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: ;
 }
 
 .card-box1,
@@ -153,6 +156,7 @@ h4 {
   font-weight: 700;
   line-height: 120%; /* 24px */
   letter-spacing: -0.2px;
+  border: solid 1px #535868;
 }
 
 .card-box1,
@@ -165,4 +169,12 @@ p {
   line-height: 140%; /* 22.4px */
   letter-spacing: -0.5px;
 
+}
+
+.box1-box1{
+  display: flex;
+  gap: 10px;
+  border: solid 1px #535868;
+  justify-content:stretch;
+  flex-direction: column;
 }
