@@ -138,15 +138,19 @@ main .card {
   flex-direction: column;
 }
 
-.card-box1{
+.card-box1 {
   display: flex;
   gap: 10px;
   align-items: flex-start;
-  justify-content: ;
 }
 
-.card-box1,
-h4 {
+.box1-box1 {
+  display: flex;
+  border: solid 1px red;
+  flex-direction: column;
+}
+
+.card-box1 .box1-box1 h4 {
   color: var(--colors-neutral-0, #fbfdfe);
 
   /* text-preset-2 */
@@ -157,6 +161,7 @@ h4 {
   line-height: 120%; /* 24px */
   letter-spacing: -0.2px;
   border: solid 1px #535868;
+  align-self: ;
 }
 
 .card-box1,
@@ -168,13 +173,25 @@ p {
   font-weight: 400;
   line-height: 140%; /* 22.4px */
   letter-spacing: -0.5px;
-
 }
 
-.box1-box1{
+.box1-box1 h4 {
+  border: solid 1px red;
+}
+
+.card-box2 {
   display: flex;
+  justify-content: space-between;
+}
+
+.card-box2 .butt1 {
+  border-radius: var(--corner-radius-full, 999px);
+  border: 1px solid var(--colors-neutral-600, #535868);
+  display: flex;
+  padding: var(--spacing-100, 8px) var(--spacing-200, 16px);
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  border: solid 1px #535868;
-  justify-content:stretch;
-  flex-direction: column;
+  background: none;
+  color: white;
 }
