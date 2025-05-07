@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(#04091b 0%, #091540 100%), #fff;
   background-attachment: fixed;
@@ -124,7 +130,6 @@ section {
 
 main {
   color: white;
-  border: solid 1px #535868;
 }
 
 main .card {
@@ -132,7 +137,6 @@ main .card {
   height: 190px;
   padding: 20px;
   border-radius: var(--corner-radius-20, 20px);
-  border: 1px solid #535868;
   background: #202535;
   display: flex;
   flex-direction: column;
@@ -146,8 +150,22 @@ main .card {
 
 .box1-box1 {
   display: flex;
-  border: solid 1px red;
   flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.box1-box1 p{
+  color: var(--colors-neutral-300, #C6C6C6);
+
+/* text-preset-5 */
+font-family: "Noto Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+letter-spacing: -0.5px;
 }
 
 .card-box1 .box1-box1 h4 {
@@ -160,13 +178,10 @@ main .card {
   font-weight: 700;
   line-height: 120%; /* 24px */
   letter-spacing: -0.2px;
-  border: solid 1px #535868;
-  align-self: ;
 }
 
 .card-box1,
 p {
-  border: solid 1px #535868;
   font-family: "Noto Sans";
   font-size: 16px;
   font-style: normal;
@@ -175,9 +190,6 @@ p {
   letter-spacing: -0.5px;
 }
 
-.box1-box1 h4 {
-  border: solid 1px red;
-}
 
 .card-box2 {
   display: flex;
@@ -194,4 +206,15 @@ p {
   gap: 10px;
   background: none;
   color: white;
+}
+
+.toggle{
+  visibility: hidden;
+}
+
+.label{
+  width: 36px;
+  height: 20px;
+  background-color:white ;
+  border-radius: 50px;
 }
