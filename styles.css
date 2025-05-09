@@ -218,3 +218,31 @@ p {
   background-color:white ;
   border-radius: 50px;
 }
+
+.checkbox{
+  background-color: #d2d2d2;
+  width: 80px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+.checkbox::before{
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  width: 40px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+input:checked + .checkbox{
+  background-color: #F25C54;
+}
+
+input:checked + .checkbox::before{
+  transform: translateX(40px);
+}
