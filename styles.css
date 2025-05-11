@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 3rem;
 }
 
 header {
@@ -22,6 +23,8 @@ header {
   border-radius: var(--corner-radius-10, 10px);
   align-items: center;
   justify-content: space-between;
+  padding: 12px;
+
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -29,6 +32,7 @@ header {
 .header-box1 {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .header-box2 {
@@ -65,6 +69,7 @@ section {
   font-style: normal;
   font-weight: 700;
   letter-spacing: -1px;
+  margin-bottom: 20px;
 }
 
 .filter-box {
