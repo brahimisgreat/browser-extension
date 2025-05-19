@@ -102,6 +102,15 @@ section {
   background: var(--colors-red-400, #f25c54);
 }
 
+.btn1:hover, .btn2:hover, .btn3:hover {
+  background: #535868
+}
+
+.btn1:focus, .btn2:focus, .btn3:focus {
+  border: 2px solid #F25C54
+ ;
+}
+
 .btn2 {
   display: flex;
   padding: var(--spacing-100, 8px) 20px var(--spacing-125, 10px) 20px;
@@ -134,6 +143,7 @@ section {
 
 .active {
   background: var(--colors-red-400, #f25c54);
+  color: black;
 }
 
 main {
@@ -145,7 +155,6 @@ main {
 
 main .card {
   width: 303px;
-  height: 200px;
   padding: 20px;
   border-radius: var(--corner-radius-20, 20px);
   background: #202535;
@@ -158,6 +167,7 @@ main .card {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  height: 8rem;
 }
 
 .box1-box1 {
@@ -198,6 +208,7 @@ p {
   font-weight: 400;
   line-height: 140%; /* 22.4px */
   letter-spacing: -0.5px;
+  
 }
 
 .card-box2 {
@@ -233,6 +244,10 @@ p {
   background-color: transparent;
   color: var(--colors-neutral-0, #fbfdfe);
   border: #535868 solid 1px;
+}
+
+.active:hover{
+  background-color:#DE4840 ;
 }
 
 .switch {
@@ -350,4 +365,6 @@ height: 200px;
     width: 31%;
     height: 220px;
   }
+
+ 
 }
