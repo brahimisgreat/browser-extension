@@ -48,6 +48,27 @@ header {
   align-items: center;
 }
 
+.sun-btn{
+display: flex;
+width: 50px;
+height: 50px;
+justify-content: center;
+align-items: center;
+background: none;
+border: none;
+border-radius: var(--corner-radius-12, 12px);
+cursor: pointer;
+}
+ 
+
+.sun-btn:focus{
+  border: 2px solid #F25C54;
+}
+
+.sun:focus{
+  border: 2px solid #F25C54;
+}
+
 .h3 {
   font-size: 24px;
   font-weight: 700;
@@ -244,6 +265,16 @@ p {
   background-color: transparent;
   color: var(--colors-neutral-0, #fbfdfe);
   border: #535868 solid 1px;
+}
+
+.rmove:hover {
+  background-color: #F25C54;
+  color: black
+}
+
+.rmove:focus{
+  border: 2px solid #F25C54;
+  background-color: #535868 ;
 }
 
 .active:hover{
