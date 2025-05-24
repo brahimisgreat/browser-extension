@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body, .bodylight {
+body, .darkmode {
   background: linear-gradient(#04091b 0%, #091540 100%), #fff;
   background-attachment: fixed;
   background-size: cover;
@@ -15,14 +15,37 @@ body, .bodylight {
   align-items: center;
   gap: 3rem;
 }
-/* .bodylight {
-  background: linear-gradient(180deg, #EBF2FC 0%, #EEFBF9 100%), #FFF;
-} */
+  
+body, .lightmode {
+ background: linear-gradient(180deg, #EBF2FC 0%, #EEFBF9 100%), #FFF;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
 
-header {
+
+
+.header {
   width: 343px;
   display: flex;
   background-color: #202535;
+  border-radius: var(--corner-radius-10, 10px);
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  margin-top: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.headerLight {
+  width: 343px;
+  display: flex;
+  background-color: #FBFDFE;
   border-radius: var(--corner-radius-10, 10px);
   align-items: center;
   justify-content: space-between;
@@ -38,6 +61,17 @@ header {
   align-items: center;
 }
 
+.headerLight .header-box2 {
+   width: 50px;
+  height: 50px;
+  border-radius: var(--corner-radius-12, 12px);
+  background: var(--colors-neutral-700, #EEEEEE);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .header-box2 {
   width: 50px;
   height: 50px;
@@ -47,6 +81,9 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+
+
 
 .sun-btn{
 display: flex;
@@ -59,6 +96,27 @@ border: none;
 border-radius: var(--corner-radius-12, 12px);
 cursor: pointer;
 }
+.headerLight .sun-btn{
+  display: none;
+}
+
+.moon-btn{
+  display: none;
+}
+
+.headerLight .moon-btn{
+ display: flex;
+width: 50px;
+height: 50px;
+justify-content: center;
+align-items: center;
+background: none;
+border: none;
+border-radius: var(--corner-radius-12, 12px);
+cursor: pointer;
+}
+
+
  
 
 .sun-btn:focus{
@@ -74,6 +132,13 @@ cursor: pointer;
   font-weight: 700;
   font-family: "Geologica", sans-serif;
   color: white;
+}
+
+.headerLight .h3{
+   font-size: 24px;
+  font-weight: 700;
+  font-family: "Geologica", sans-serif;
+  color: #091540;
 }
 
 /* SECTION */
