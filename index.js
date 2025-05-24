@@ -4,8 +4,8 @@
 const btn1 = document.querySelector(".btn1");
 const btn2 = document.querySelector('.btn2');
 const btn3 = document.querySelector('.btn3');
-const sunBtn = document.querySelector('.sun-btn');
 const moonBtn = document.querySelector('.moon-btn');
+const sunBtn = document.querySelector('.sun-btn');
 
 let darkmode = false;
 
@@ -21,11 +21,12 @@ btn3.addEventListener("click", btn3Click);
 
 function sunBtnClick() {
    document.body.classList.toggle("lightmode");
-   document.querySelector("header").classList.toggle("headerLight");
 }
 
 function MoonBtnClick() {
     document.body.classList.toggle("darkmode");
+   
+
 }
 
 
