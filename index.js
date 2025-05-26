@@ -20,10 +20,12 @@ btn3.addEventListener("click", btn3Click);
 
 
 function sunBtnClick() {
+document.body.classList.remove("darkmode");
    document.body.classList.toggle("lightmode");
 }
 
 function MoonBtnClick() {
+    document.body.classList.remove("lightmode");
     document.body.classList.toggle("darkmode");
    
 
@@ -32,18 +34,19 @@ function MoonBtnClick() {
 
 
 function btn1Click() {
-    btn1.classList.toggle("active");
-    btn2.classList.remove("active");  
+    btn1.classList.add("active");
+    btn2.classList.remove("active")
+    btn3.classList.remove("active");  
 }
 
 function btn2Click(){
-    btn2.classList.toggle("active");
+    btn2.classList.add("active");
     btn1.classList.remove("active");    
     btn3.classList.remove("active");
 }
 
 function btn3Click(){
-    btn3.classList.toggle("active");
+    btn3.classList.add("active");
     btn1.classList.remove("active");    
     btn2.classList.remove("active");    
 }

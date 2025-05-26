@@ -188,6 +188,8 @@ section {
   background: var(--colors-red-400, #f25c54);
 }
 
+
+
 .darkmode .btn1 {
   border-radius: var(--corner-radius-full, 999px);
   display: flex;
@@ -201,7 +203,7 @@ section {
   font-size: 20px;
   border: none;
 }
-.lightmode .btn1 {
+.lightmode .btn1, .lightmode .btn2, .lightmode .btn3 {
   border-radius: var(--corner-radius-full, 999px);
   display: flex;
   padding: var(--spacing-100, 8px) 20px var(--spacing-125, 10px) 20px;
@@ -217,6 +219,8 @@ section {
 
 .active {
   background: var(--colors-red-400, #f25c54);
+  color: black;
+  
 }
 
 .darkmode .btn1:hover, .darkmode .btn2:hover, .darkmode .btn3:hover {
@@ -259,9 +263,13 @@ section {
   border: none;
 }
 
-.active {
+.darkmode .active {
   background: var(--colors-red-400, #f25c54);
-  color: black;
+}
+
+.lightmode .active {
+  background: var(--colors-red-400, #f25c54);
+  color: white;
 }
 
 main {
@@ -271,7 +279,7 @@ main {
   gap: 20px;
 }
 
-main .card {
+.darkmode main .card {
   width: 303px;
   padding: 20px;
   border-radius: var(--corner-radius-20, 20px);
@@ -281,6 +289,15 @@ main .card {
   gap: 20px;
 }
 
+.lightmode main .card {
+  width: 303px;
+  padding: 20px;
+  border-radius: var(--corner-radius-20, 20px);
+  background: #FBFDFE;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .card-box1 {
   display: flex;
   gap: 20px;
@@ -294,7 +311,7 @@ main .card {
   gap: 10px;
 }
 
-.box1-box1 p {
+.darkmode .box1-box1 p {
   color: var(--colors-neutral-300, #c6c6c6);
 
   /* text-preset-5 */
@@ -306,8 +323,31 @@ main .card {
   letter-spacing: -0.5px;
 }
 
-.card-box1 .box1-box1 h4 {
+.lightmode .box1-box1 p {
+  color: var(--colors-neutral-300, #535868);
+
+  /* text-preset-5 */
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.5px;
+}
+
+.darkmode .card-box1 .box1-box1 h4 {
   color: var(--colors-neutral-0, #fbfdfe);
+
+  /* text-preset-2 */
+  font-family: "Noto Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.2px;
+}
+.lightmode .card-box1 .box1-box1 h4 {
+  color: var(--colors-neutral-0, #091540);
 
   /* text-preset-2 */
   font-family: "Noto Sans";
@@ -348,10 +388,9 @@ p {
 
 
 
-.rmove {
+.darkmode .rmove {
   padding: 8px;
   border-radius: 30px;
-  color: var(--colors-neutral-0, #fbfdfe);
   cursor: pointer;
   font-family: "Noto Sans";
   font-size: 16px;
@@ -360,7 +399,21 @@ p {
   line-height: 140%; /* 22.4px */
   letter-spacing: -0.5px;
   background-color: transparent;
-  color: var(--colors-neutral-0, #fbfdfe);
+  border: #535868 solid 1px;
+  color:#FBFDFE ;
+}
+
+.lightmode .rmove {
+  padding: 8px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.5px;
+  background-color: transparent;
   border: #535868 solid 1px;
 }
 
