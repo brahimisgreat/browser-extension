@@ -265,6 +265,8 @@ section {
 
 .darkmode .active {
   background: var(--colors-red-400, #f25c54);
+  color: #091540;
+
 }
 
 .lightmode .active {
@@ -500,27 +502,42 @@ input:checked + .slider:before {
   
 
 
-  header {
-    width: 90vw;
-  
+  .darkmode header {
+    min-width: 90vw;
   }
 
-  section {
+  .lightmode header {
+    min-width: 90vw;
+  }
+
+  .darkmode section {
+    width: 90vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .lightmode section {
     width: 90vw;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  main{
+  .darkmode main{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90vw;
+  }
+  .lightmode main{
     flex-direction: row;
     flex-wrap: wrap;
     width: 90vw;
   }
 
-  main .card{
+  .darkmode main .card{
     width:48%;
 height: 200px;
   }
+  .lightmode main .card{
+    width:48%;
 
 }
 
