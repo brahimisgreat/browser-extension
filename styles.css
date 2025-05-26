@@ -536,9 +536,10 @@ input:checked + .slider:before {
     width:48%;
 height: 200px;
   }
+
   .lightmode main .card{
     width:48%;
-
+}
 }
 
 
@@ -546,7 +547,7 @@ height: 200px;
 /* MEDIA QUEERIES FOR DESKTOP */
 
 @media (min-width: 1024px) {
-  header{
+  .darkmode header{
     width: 88vw;
   }
 
@@ -563,6 +564,6 @@ height: 200px;
     width: 31%;
     height: 220px;
   }
+}
 
  
-}
