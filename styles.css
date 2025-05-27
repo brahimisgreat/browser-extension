@@ -497,6 +497,7 @@ input:checked + .slider:before {
 
 
 /* MEDIA QuEERs */
+/* MEDIA QUERIES FOR tablets */
 
 @media (min-width: 768px) {
   
@@ -527,18 +528,21 @@ input:checked + .slider:before {
     width: 90vw;
   }
   .lightmode main{
-    flex-direction: row;
+     flex-direction: row;
     flex-wrap: wrap;
     width: 90vw;
   }
 
   .darkmode main .card{
-    width:48%;
+    max-width: 386px;
+    min-width: 386px;
 height: 200px;
   }
 
   .lightmode main .card{
-    width:48%;
+     max-width: 386px;
+    min-width: 386px;
+height: 200px;
 }
 }
 
@@ -548,20 +552,41 @@ height: 200px;
 
 @media (min-width: 1024px) {
   .darkmode header{
+    min-width: 90vw;
+  }
+
+ .darkmode section {
+    width: 90vw;
+    justify-content: space-between;
+  }
+
+  .darkmode main{
+    width: 90vw;
+    
+  }
+ .darkmode main .card{
+    min-width: 31%;
+    height: 220px;
+  }
+
+
+
+  .lightmode header{
     width: 88vw;
   }
 
-  section {
+ .lightmode section {
     width: 88vw;
     justify-content: space-between;
   }
 
-  main{
-    width: 88vw;
+  .lightmode main{
+    max-width: 88vw;
+    gap: 25px;
     
   }
-  main .card{
-    width: 31%;
+ .lightmode main .card{
+    max-width: 31%;
     height: 220px;
   }
 }
